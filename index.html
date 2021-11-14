@@ -17,8 +17,6 @@
 <body>
 
 
-    <button class="translate" id="es">Español</button>
-    <button class="translate" id="en">Ingles</button>
     
     <div class="panel panel-primary contenedor">
         <div class="panel-heading">
@@ -75,33 +73,33 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>addbc</td>
+                    <td id="p1">addcc</td>
                     <td style="color: green;">Si</td>
-                    <td><button class="btn btn-secondary" data-bs-dismiss="modal">probar</button></td>
+                    <td><button class="btn btn-secondary" data-bs-dismiss="modal" onclick="cambiar('p1')">probar</button></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>cbda</td>
+                    <td id="p2">abaabbdc</td>
                     <td style="color: green;">Si</td>
-                    <td><button class="btn btn-secondary" data-bs-dismiss="modal">probar</button></td>
+                    <td><button class="btn btn-secondary" data-bs-dismiss="modal" onclick="cambiar('p2')">probar</button></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>bbcd</td>
+                    <td id="p3">bbcd</td>
                     <td style="color:red;">No</td>
-                    <td><button class="btn btn-secondary" data-bs-dismiss="modal">probar</button></td>
+                    <td><button class="btn btn-secondary" data-bs-dismiss="modal" onclick="cambiar('p3')">probar</button></td>
                   </tr>
                   <tr>
                     <th scope="row">4</th>
-                    <td>abcddd</td>
+                    <td id="p4">abcddd</td>
                     <td style="color:red;">No</td>
-                    <td><button class="btn btn-secondary" data-bs-dismiss="modal">probar</button></td>
+                    <td><button class="btn btn-secondary" data-bs-dismiss="modal" onclick="cambiar('p4')">probar</button></td>
                   </tr>
                   <tr>
                     <th scope="row">5</th>
-                    <td>abbccc</td>
+                    <td id="p5">abbccc</td>
                     <td style="color:green;">Si</td>
-                    <td><button class="btn btn-secondary" data-bs-dismiss="modal">probar</button></td>
+                    <td><button class="btn btn-secondary" data-bs-dismiss="modal" onclick="cambiar('p5')">probar</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -132,7 +130,7 @@
                   <li class="mt-2">Si el recorrido termina en uno de los siguientes nodos <br> <b> Q0, Q1, Q2, Q3, Q4
                     </b>
                     la palabra será <b style="color: green;">Aceptada</b> por el automata</li>
-                  <li class="mt-2">Si el recorrido termina en el nodo <b>Q5</b>
+                  <li class="mt-2">Si el recorrido termina en el nodo <b>Q5, Q6</b>
                     la palabra será <b style="color: red;">Rechazada</b> por el automata</li>
                 </ul>
                 <li class="mt-2">Presione el boton <b>limpiar</b> para reiniciar los colores del grafo</li>

@@ -347,3 +347,12 @@ function BorrarRepetidos(){
       }
 
   }
+
+
+//=========================Probar=================================
+  function cambiar(id) {
+    console.log(document.getElementById(id).id);
+    var palabra = document.getElementById(id);
+    var contenido = palabra.innerHTML;
+    document.querySelector(".form-control").value = contenido
+  }
