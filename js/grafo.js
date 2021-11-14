@@ -161,8 +161,11 @@ function RecorriendoGrafo(palabra){
   let confirmar = document.querySelector(".btn_clic");
 
       confirmar.addEventListener("click", function () {
+
         let palabra = document.querySelector(".form-control").value;
+
         palabra=palabra.replace(/\s+/,"A");
+
         if(palabra.length==1&&palabra.charAt(0)=='#'){
           PintarNodos(1,"#ff383f");
           nodos.push(1);
@@ -171,11 +174,10 @@ function RecorriendoGrafo(palabra){
        
         else if(Mayusculas(palabra)==='0'){
 
-          console.log("ficha ",palabra)
-
             RecorriendoGrafo(palabra)
             BorrarRepetidos();
             PintarContiempo();
+
         }else{
           Swal.fire({
             position: 'center',
@@ -284,8 +286,6 @@ function Mensaje(){
 //============================BorrarRepetidos========================
 function BorrarRepetidos(){
 
-    console.log(nodos)
-
     nodos = nodos.filter((item,index)=>{
 
         return nodos.indexOf(item) === index;
@@ -297,8 +297,6 @@ function BorrarRepetidos(){
         return aristas.indexOf(item) === index;
 
     });
-
-    console.log(nodos)
 
 }
 
@@ -351,8 +349,11 @@ function BorrarRepetidos(){
 
 //=========================Probar=================================
   function cambiar(id) {
-    console.log(document.getElementById(id).id);
+
     var palabra = document.getElementById(id);
+
     var contenido = palabra.innerHTML;
+
     document.querySelector(".form-control").value = contenido
+
   }
