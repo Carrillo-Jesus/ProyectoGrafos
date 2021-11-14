@@ -6,7 +6,7 @@ var nodes = new vis.DataSet([
   { id: 5, label: " Q4 ", borderWidth: 4,fixed:{x:true,y:true} },
 
   { id: 6, label: "Q5",fixed:{x:true,y:true}},
-  { id: 7, label: "Q5",fixed:{x:true,y:true}},
+  { id: 7, label: "Q6",fixed:{x:true,y:true}},
 ]);
 
 var edges = new vis.DataSet([
@@ -245,7 +245,7 @@ function PintarContiempo(){
 //========================================Mensaje============================
 function Mensaje(){
   
-  if(nodes.get(nodos[nodos.length-1]).label=="Q5"){
+  if(nodes.get(nodos[nodos.length-1]).label=="Q5"||nodes.get(nodos[nodos.length-1]).label=="Q6"){
     Swal.fire({
       position: 'center',
       icon: 'error',
